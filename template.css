@@ -1,9 +1,12 @@
 body {
     background-color: peachpuff;
+    background-image: url(53ef5dd19677a.image.jpg);
+
 }
 
+
     h1 { 
-        color: black;
+        color: green;
         font-family: verdana;
        }
 
@@ -21,6 +24,7 @@ p {
     font-family: verdana;
     font-size: 20px;
     text-align: center;
+    color: green;
 }
 
 .container {
@@ -36,5 +40,7 @@ img {
     height: auto;
 
 }
+
+
 
 
