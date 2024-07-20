@@ -31,7 +31,7 @@ p {
     text-align: center;
 }
 
-img {
+#akechi {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,6 +41,14 @@ img {
 
 }
 
+
+#timmy { 
+    top: 20d%; 
+    left: 50%;
+
+
+
+}
 
 
 
