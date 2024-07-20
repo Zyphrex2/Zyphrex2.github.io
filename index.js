@@ -8,4 +8,3 @@ instdict = {
     "Baritones":[],
     "Tubas":[]
 }
-console.log()
