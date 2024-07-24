@@ -52,7 +52,25 @@ p {
 }
 
 
+#sigma {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50% );
+    height: auto;
+    max-width: 19%;
+}
 
 
 
 
+
+
+#skibidi {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    max-width: 3%;
+
+
+}
