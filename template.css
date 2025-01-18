@@ -1,5 +1,22 @@
 body {
-    background-color: #faf9f6;
+    background-color: #0bbe1a40;
     background-image: url(53ef5dd19677a.image.jpg);
     
+}
+
+h2 { 
+    Text-align: Center;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+text-align: center;
+
 }
