@@ -8,6 +8,7 @@ h2 {
     Text-align: Center;
     color: #333;
 
+
 }
 body {
     font-family: Arial, sans-serif;
@@ -265,4 +266,31 @@ footer {
     border-radius: 5px;
     opacity: 0;
     transition: all 0.3s ease;
+}
+/* Center the hero section content */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Centers the text */
+}
+
+/* Center buttons within the hero section */
+.hero a {
+    display: inline-block; /* Treats the links as block elements for centering */
+    margin: 10px; /* Space between buttons */
+    padding: 12px 24px; /* Adjust button padding */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effects for buttons */
+.hero a:hover {
+    background-color: #388E3C;
 }
