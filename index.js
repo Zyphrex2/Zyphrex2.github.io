@@ -31,3 +31,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+const sections = document.querySelectorAll('.hero, .menu, .about, .contact, .cat-cafe');
+
+function checkScroll() {
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+            section.classList.add('fade-in');
+        }
+    });
+}
+
+window.addEventListener('scroll', checkScroll);
+checkScroll(); //

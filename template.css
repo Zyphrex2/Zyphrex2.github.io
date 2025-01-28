@@ -196,3 +196,72 @@ footer {
     background: #4CAF50;
     color: #fff;
 }
+.nav-links {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Show menu when active class is added */
+.nav-links.active {
+    display: block;
+    animation: slideIn 0.5s ease;
+}
+
+/* Animation for sliding in the nav */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+/* Button hover effect */
+.cta, .bta {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+.cta:hover, .bta:hover {
+    background-color: #388E3C;
+}
+
+/* Add a scale effect when hovered */
+.cta:hover::before, .bta:hover::before {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Smooth transition for scale effect */
+.cta::before, .bta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
