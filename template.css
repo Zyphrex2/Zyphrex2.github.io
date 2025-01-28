@@ -67,7 +67,7 @@ p1 {
     display: none;
     background: none;
     border: none;
-    color: #fff;
+    color: #020202;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -108,7 +108,7 @@ p1 {
 .menu {
     padding: 2rem 1rem;
     text-align: center;
-    background: #fff;
+    background: #f9f5f5;
 }
 
 .menu h2 {
@@ -212,6 +212,7 @@ footer {
     animation: slideIn 0.5s ease;
 }
 
+
 /* Animation for sliding in the nav */
 @keyframes slideIn {
     from {
@@ -294,4 +295,7 @@ footer {
 /* Hover effects for buttons */
 .hero a:hover {
     background-color: #388E3C;
+}
+p1 {
+    color: black; /* Or any other color you prefer */
 }
