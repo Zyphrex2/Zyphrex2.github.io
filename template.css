@@ -236,7 +236,7 @@ footer {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #388E3C;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -311,5 +311,262 @@ p1 {
 .logo {
     text-align: center; /* Center text in the logo */
     font-size: 2rem; /* Optional: Adjust the size if needed */
+}
+/* General navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hide menu items on mobile by default */
+.nav-links {
+    display: none;
+}
+
+/* Mobile hamburger menu styling */
+.menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Show menu when toggled in mobile view */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #06fc2f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+}
+
+/* Ensure the links are spaced out in mobile view */
+.nav-links.active li {
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+    /* For larger screens, always show the navbar items */
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .menu-toggle {
+        display: none; /* Hide the hamburger menu on larger screens */
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+/* General navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    position: relative;
+    z-index: 100;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade in animation */
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+    animation: slideIn 1s ease-out forwards; /* Logo sliding in */
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Initially moved upwards */
+    animation: fadeInUp 1s 0.5s ease-out forwards; /* Fade and move down animation */
+}
+
+/* Individual nav links animation */
+.nav-links li {
+    margin: 0 15px;
+    opacity: 0;
+    animation: fadeInLink 1s ease-out forwards; /* Link fade-in effect */
+}
+
+/* Delay each link animation */
+.nav-links li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.nav-links li:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.nav-links li:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.nav-links li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.nav-links li:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+.nav-links li:nth-child(6) {
+    animation-delay: 1s;
+}
+
+/* Menu item hover effect */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5aaf7d; /* Hover color */
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #5aaf7d; /* Animation underline color */
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::before {
+    width: 100%; /* Underline animation */
+}
+
+/* Hide menu items on mobile by default */
+.nav-links {
+    display: none;
+}
+
+/* Mobile hamburger menu styling */
+.menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 101;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Hamburger menu animation on click */
+.menu-toggle.open {
+    transform: rotate(90deg); /* Rotate on click */
+}
+
+/* Show menu when toggled in mobile view */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+}
+
+/* Ensure the links are spaced out in mobile view */
+.nav-links.active li {
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+    /* For larger screens, always show the navbar items */
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .menu-toggle {
+        display: none; /* Hide the hamburger menu on larger screens */
+    }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
