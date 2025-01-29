@@ -299,3 +299,17 @@ footer {
 p1 {
     color: black; /* Or any other color you prefer */
 }
+/* Center the logo in the header */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center; /* Ensures text is centered if there's any wrapping */
+    width: 100%;
+}
+
+.logo {
+    text-align: center; /* Center text in the logo */
+    font-size: 2rem; /* Optional: Adjust the size if needed */
+}
+
