@@ -626,4 +626,68 @@ html {
         box-shadow: 0 0 30px 10px rgb(10, 185, 40);
     }
 }
+/* Basic styling for the Dine In / Dine Out section */
+.dine-options {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.dine-options h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark color for the heading */
+}
+
+.dine-option {
+    display: inline-block;
+    width: 45%; /* 2 items side by side */
+    margin: 10px 2.5%; /* Space between the two options */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dine-option:hover {
+    transform: translateY(-10px); /* Lift the box when hovered */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dine-option h3 {
+    font-size: 1.8rem;
+    color: #27ae60; /* Green color for the headings */
+    margin-bottom: 10px;
+}
+
+.dine-option p {
+    font-size: 1rem;
+    color: #34495e; /* Dark gray text for descriptions */
+    margin-bottom: 20px;
+}
+
+.dine-option a.cta {
+    text-decoration: none;
+    background-color: #27ae60; /* Green button color */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.dine-option a.cta:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .dine-option {
+        width: 90%; /* Make the options stack vertically on smaller screens */
+        margin: 10px auto; /* Center the options */
+    }
+}
 
