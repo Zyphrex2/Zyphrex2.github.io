@@ -1,0 +1,50 @@
+/* Main section styling */
+#cat-cove {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Cat profile styling */
+.cats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cat-profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cat-profile img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cat-profile h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.cat-profile p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

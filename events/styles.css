@@ -58,4 +58,78 @@ footer {
     text-align: center;
     padding: 20px;
 }
+/* General navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hide menu items on mobile by default */
+.nav-links {
+    display: none;
+}
+
+/* Mobile hamburger menu styling */
+.menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Show menu when toggled in mobile view */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+}
+
+/* Ensure the links are spaced out in mobile view */
+.nav-links.active li {
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+    /* For larger screens, always show the navbar items */
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .menu-toggle {
+        display: none; /* Hide the hamburger menu on larger screens */
+    }
+}
 
