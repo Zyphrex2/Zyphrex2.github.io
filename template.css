@@ -35,18 +35,21 @@ p1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
+    padding-left: 15%;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+}
+#lastone{
+    padding-right: 50%;
 }
 
 .nav-links li {
