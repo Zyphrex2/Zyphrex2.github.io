@@ -600,14 +600,6 @@ html {
     transition: opacity 0.3s ease;
 }
 
-
-
-
-
-
-
-}
-
 .dine-options {
     background-color: #f9f9f9; /* Light background color */
     padding: 40px;
@@ -675,7 +667,12 @@ html {
     color: black;
 }
 
-
+#topbarthing {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
     
 
 
