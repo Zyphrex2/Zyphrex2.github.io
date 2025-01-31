@@ -72,7 +72,7 @@ p1 {
     cursor: pointer;
 }
 
-/* Hero Section */
+
 .hero {
     text-align: center;
     padding: 3rem 1rem;
@@ -104,7 +104,7 @@ p1 {
     background: #45a049;
 }
 
-/* Menu Section */
+
 .menu {
     padding: 2rem 1rem;
     text-align: center;
@@ -152,7 +152,7 @@ p1 {
     margin: 0 auto;
 }
 
-/* Contact Section */
+
 .contact {
     padding: 2rem 1rem;
     background: #fff;
@@ -376,20 +376,20 @@ p1 {
 }
 
 @media screen and (min-width: 768px) {
-    /* For larger screens, always show the navbar items */
+
     .nav-links {
         display: flex;
         flex-direction: row;
     }
     
     .menu-toggle {
-        display: none; /* Hide the hamburger menu on larger screens */
+        display: none; 
     }
 }
 html {
     scroll-behavior: smooth;
 }
-/* General navbar styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -398,14 +398,14 @@ html {
     background-color: #333;
     position: relative;
     z-index: 100;
-    opacity: 0; /* Initially hidden */
-    animation: fadeIn 1s ease-in-out forwards; /* Fade in animation */
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards; 
 }
 
 .logo {
     color: #fff;
     font-size: 1.8rem;
-    animation: slideIn 1s ease-out forwards; /* Logo sliding in */
+    animation: slideIn 1s ease-out forwards; 
 }
 
 .nav-links {
@@ -582,7 +582,23 @@ html {
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
-    transition: all 0.3s 
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Glowing effect */
+.special-events-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
 
 
@@ -590,9 +606,7 @@ html {
 
 
 
-
-
-
+}
 
 .dine-options {
     background-color: #f9f9f9; /* Light background color */
